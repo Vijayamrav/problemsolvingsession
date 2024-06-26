@@ -11,7 +11,7 @@ for(i=0;i<number.length;i++){
 for(j=0;j<uniqueNumber.length;j++){
     prod=1;
     for(k=1;k<=uniqueNumber[j];k++){
-        prod=prod*Number(k);
+        prod=prod*k;
     }
     res=res+prod+' ';
     

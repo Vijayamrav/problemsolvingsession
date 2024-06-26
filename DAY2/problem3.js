@@ -18,7 +18,7 @@ for(number of findLS){
         if(number>largest){
             largest=number;
         }
-        else if(number<smallest){
+         if(number<smallest){
             smallest=number;
         }
       }

@@ -1,0 +1,116 @@
+1) Program to print 1 to num, num to 1, -1 to -num, -num to -1 by using while loop
+
+i)let extremeNum=prompt('enter a extreme number: ');
+i=1;
+while(i<=extremeNum){
+    console.log(i);
+    i++;
+}
+ii)let extremeNum=prompt('enter extreme number: ');
+i=1;
+while(extremeNum>=i){
+    console.log(extremeNum);
+    extremeNum--;
+    
+}
+iii)let extremeNum=prompt('enter a number in -ve: ');
+i=-1;
+while(extremeNum<=i){
+    console.log(i);
+    i--;
+}
+
+iv)const prompt=require('prompt-sync')();
+let extremeNum=prompt('enter a extremenumber in -ve: ');
+i=-1;
+while(extremeNum<=i){
+    console.log(extremeNum);
+    extremeNum++;
+}
+
+2) Write a program to find the largest prime in the given number
+input: 46537
+output: 7
+
+solution:
+
+debugger;
+const prompt=require('prompt-sync')();
+let findLarge=prompt("enter a number: ");
+largest=0;
+for(number of findLarge){
+    checkPrime=true;
+    if(number>1){
+        for(i=2;i<number;i++){
+            if(number%i==0){
+              checkPrime=false;
+              break;  
+            }
+        }
+        if(checkPrime){
+            if(number>largest){
+                largest=number;
+            }
+        }
+    }    
+}
+console.log(largest);
+
+3) Write a program to print the sum of largest and smallest prime digits in the given number
+input: 5497351
+output: 10
+
+solution:
+
+const prompt=require('prompt-sync')();
+let findLS=prompt("enter a number : ");
+largest=0;
+smallest=10;
+for(number of findLS){
+    checkPrime=true;
+    if(number>1){
+        if(number==2){
+            smallest=2;
+        }
+      for(i=2;i<number;i++){
+        if(number%i==0){
+            checkPrime=false;
+            break;
+        }
+      }
+      if(checkPrime){
+        if(number>largest){
+            largest=number;
+        }
+        else if(number<smallest){
+            smallest=number;
+        }
+      }
+
+    }
+}
+console.log(`largest prime is ${largest}`);
+console.log(`smallest prime is ${smallest}`);
+console.log(`sum is ${Number(largest)+Number(smallest)}`);
+
+4)Write a program to print the largest non prime digit in the given number
+input: 463482
+output: 8
+solution:
+
+const prompt=require('prompt-sync')();
+let findNonPrime=prompt('enter a number: ');
+largest=0;
+for(number of findNonPrime){
+    
+    if(number>1){
+        for(i=2;i<number;i++){
+            if(number%i==0){
+                if(number>largest){
+                    largest=number;
+                }
+            }
+        }
+    }
+}
+console.log(largest);

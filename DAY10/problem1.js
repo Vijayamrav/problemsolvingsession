@@ -8,7 +8,7 @@ Output: 5, nums = [0,1,2,3,4,,,,,_]
 */
 
 // arr=[0,0,1,1,1,2,2,2,3,3,4];
-arr=[1,1,2];
+arr=[0,0,1,1,1,2,2,3,3,4];
 arrUnique=[];
 for(i of arr){
     if(!arrUnique.includes(i)){

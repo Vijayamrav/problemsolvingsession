@@ -5,7 +5,7 @@
 debugger;
 const prompt=require('prompt-sync')();
 let findLarge=prompt("enter a number: ");
-largest=1;
+largest=0;
 for(number of findLarge){
     checkPrime=true;
     if(number>1){
